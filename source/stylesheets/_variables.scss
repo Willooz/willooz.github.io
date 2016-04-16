@@ -1,0 +1,124 @@
+// Root dimensions
+
+$root-size:          14px;
+$root-size-lg:       16px;
+
+// Fonts
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-LightIt.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-RegularIt.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:font-url('Proxima-Nova-BoldIt.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:font-url('Montserrat-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:font-url('Montserrat-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:font-url('Montserrat-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Text variables
+
+$font-family-base:    'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Apple Color Emoji', 'sans-serif';
+$font-family-header:  'Montserrat', 'sans-serif';
+$font-weight-light:   300;
+$font-weight-regular: 400;
+$font-weight-bold:    700;
+$font-size-xs:        0.75rem;
+$font-size-sm:        0.875rem;
+$font-size-base:      1rem;
+$font-size-lg:        1.25rem;
+$font-size-xl:        1.75rem;
+$line-height:         1.5;
+$letter-spacing:      0.01rem;
+
+// Whitespace variables
+
+$space-y:             3.75rem;
+$space-x:             1.25rem;
+$nav-height:          60px;
+$footer-height:       330px;
+
+// Colors
+
+$pink:                #FF566B;
+$blue-light:          #F2F7FF;
+$blue:                #5484DB;
+$blue-dark:           #1F2532;
+$green-light:         #AAEFC7;
+$green:               #2ecc71;
+$green-dark:          #25a25a;
+$yellow:              #f1c40f;
+$red:                 #e74c3c;
+$orange:              #f39c12;
+$purple:              #9b59b6;
+
+$facebook:            #3b5998;
+$linkedin:            #0077b5;
+$twitter:             #55acee;
+$medium:              #00AB6C;
+$rss:                 #f26522;
+
+// Grayscale
+
+$grey-light-light:    #F5F7F8;
+$grey-light:          #E2E9EC;
+$grey:                #7F97A3;
+$grey-dark:           #041821;
+$grey-dark-dark:      #01090D;
+
+// Blocks
+
+$radius:              .5rem;
+$radius-infinite:     999em;
