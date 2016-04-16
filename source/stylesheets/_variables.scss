@@ -1,7 +1,19 @@
+// Device breakpoints
+
+$phone:           544px;
+$tablet:          768px;
+$computer:        992px;
+
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
 // Root dimensions
 
-$root-size:          14px;
-$root-size-lg:       16px;
+$root-size:       14px;
+$root-size-lg:    16px;
 
 // Fonts
 
@@ -92,6 +104,7 @@ $footer-height:       330px;
 
 // Colors
 
+$white:               #FFF;
 $pink:                #FF566B;
 $blue-light:          #F2F7FF;
 $blue:                #5484DB;
@@ -112,11 +125,16 @@ $rss:                 #f26522;
 
 // Grayscale
 
-$grey-light-light:    #F5F7F8;
+$grey-light-light:    #F9F9F9;
 $grey-light:          #E2E9EC;
 $grey:                #7F97A3;
-$grey-dark:           #041821;
+$grey-dark:           #464646;
 $grey-dark-dark:      #01090D;
+
+// Grid
+
+$gutter:              $root-size;
+
 
 // Blocks
 

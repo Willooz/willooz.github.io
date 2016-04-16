@@ -1,0 +1,84 @@
+// Define root size
+
+html {
+  font-size: $root-size;
+}
+
+@include media-query($tablet) {
+  html { font-size: $root-size-lg;}
+}
+
+// Reset basic elements
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, img, figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, img, figure {
+  margin-bottom: $space-y / 2;
+}
+// Body
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  text-align: center;
+  color: $grey-dark;
+}
+
+// Titles
+
+h1 {
+  font-size: $font-size-xl;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: $font-size-lg;
+  font-weight: 400;
+}
+
+// Links
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:link, &:visited {}
+  &:hover, &:active, &:focus {
+    color: darken($blue, 15%);
+  }
+}
+
+// Buttons
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999em;
+  cursor: pointer;
+  &:link, &:visited {
+    color: $white;
+    background: $blue;
+  }
+  &:hover, &:active, &:focus {
+    color: $white;
+    background: darken($blue, 15%);
+  }
+}
+
+// Containers
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  margin-left: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
