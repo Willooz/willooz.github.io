@@ -1,53 +1,27 @@
-section {
-  margin-bottom: $space-y;
-}
-
 .logo img {
   width: 250px;
 }
 
-.welcome {
+#welcome {
+  padding-top: $space-y;
+  padding-bottom: $space-y;
+  text-align: center;
   background: $grey-light-light;
-  // -webkit-animation-name: welcome;
-  // -webkit-animation-duration: .9s;
 }
 
-// @-webkit-keyframes welcome {
-//   from {
-//     -webkit-transform: scale(0);
-//     opacity: 0;
-//   }
-//   50% {
-//    -webkit-transform: scale(0);
-//    opacity: 0;
-//   }
-//   82.5% {
-//     -webkit-transform: scale(1.03);
-//     -webkit-animation-timing-function: ease-out;
-//     opacity: 1;
-//   }
-//   to {
-//     -webkit-transform: scale(1);
-//   }
-// }
+#introduction {
+  padding-top: $space-y;
+  text-align: center;
+}
 
-// .doc {
-//   margin: 3em 0;
-//   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-//   font-size: 1.1em;
-//   font-weight: 300;
+#capability {
+  h2 { text-align: center; }
+}
 
-//   a {
-//     border: 1px solid white;
-//     border-radius: 3px;
-//     padding: 0.75em 0.7em;
-//     color: white;
-//     text-decoration: none;
-//     transition: color 0.1s linear;
-//     &:hover {
-//       background: rgba(0,0,0,0.2);
-//       color: white;
-//       transition: all 0.15s linear;
-//     }
-//   }
-// }
+#call {
+  text-align: center;
+}
+
+.block {
+  margin-bottom: $space-y;
+}

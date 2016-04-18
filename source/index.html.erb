@@ -2,33 +2,44 @@
 title: Home
 ---
 
-<section class="welcome">
+<section id="welcome">
   <div class="logo">
     <%= image_tag "johnny-bravo.png" %>
   </div>
-  <h1>I'm coach Johnny</h1>
-  <%= link_to "Text me 999-888-777", "https://middlemanapp.com", target: "_blank", class: "btn" %>
+  <h1>I'M COACH JOHNNY</h1>
+  <% link_to "https://middlemanapp.com", target: "_blank", class: "btn" do %>
+    <span>TEXT ME </span><i class="fa fa-comments" aria-hidden="true"></i>
+  <% end %>
 </section>
 
-<section class="container">
-  <p>Hi.</p>
+<section id="introduction" class="container">
+  <h3>Hi.</h3>
   <p>I'm a virtual coach specialized in solving business problems. From daily management issues to severe business crises, there's nothing we can't fix together!</p>
 </section>
 
-<section class="container">
-  <h3>What I can do</h3>
-  <h4>1. Frame your problem</h4>
-  <p>A problem well put is half solved! I'll test your assumptions and make sure you're on the right track from the get go!</p>
+<hr>
 
-  <h4>2. Uncover root causes</h4>
-  <p>Guesses don't fix anything. I'll use techniques like 5 Why, Triz or even Shainin to get to the bottom of things.</p>
+<section id="capability" class="container">
+  <h2>WHAT WE CAN DO</h2>
+  <div class="block">
+    <h3>Frame your problem</h3>
+    <p>A problem well put is half solved! We'll test your assumptions and make sure you're on the right track from the get go!</p>
+  </div>
 
-  <h4>3. Ensure resolution</h4>
-  <p>A good analysis is worthless without actual change. I'll track your implementation of solutions and make sure you shine.</p>
+  <div class="block">
+    <h3>Uncover root causes</h3>
+    <p>Guesses don't fix anything. We'll use techniques like 5 Why, Triz or even Shainin to get to the bottom of things.</p>
+  </div>
+
+  <div class="block">
+    <h3>Ensure resolution</h3>
+    <p>A good analysis is worthless without actual change. We'll track your implementation of solutions and make sure this is a total success!</p>
+  </div>
 </section>
 
-<section class="container">
-  <h3>Try me now</h3>
-  <p>Tell me about your problems and </p>
-  <%= link_to "Text me 999-888-777", "https://middlemanapp.com", target: "_blank", class: "btn" %>
+<hr>
+
+<section id="call" class="container">
+  <h2>TRY ME NOW</h2>
+  <%= link_to "TEXT AT 999-888-777", "https://middlemanapp.com", target: "_blank", class: "btn" %>
 </section>

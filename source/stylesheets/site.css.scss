@@ -1,6 +1,8 @@
 @charset "utf-8";
-@import "normalize";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Montserrat:400,700);
 @import "variables";
+@import "normalize";
+// @import "font-awesome";
 @import "base";
 @import "header";
 @import "footer";

@@ -8,7 +8,7 @@ html {
   html { font-size: $root-size-lg;}
 }
 
-// Reset basic elements
+// Reset spacing
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -17,30 +17,59 @@ dl, dd, ol, ul, img, figure {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, img, figure {
+h2 {
+  margin-bottom: $space-y;
+}
+
+h1, h2, blockquote, pre, ul, img, figure {
   margin-bottom: $space-y / 2;
 }
+
+h3, h4, h5, h6 {
+  margin-bottom: $space-y / 3;
+}
+
+li {
+  margin-bottom: $space-y / 4;
+}
+
 // Body
 
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-regular;
-  text-align: center;
   color: $grey-dark;
 }
 
 // Titles
 
+h1, h2, h3, .btn {
+  font-family: $font-family-header;
+}
+
 h1 {
   font-size: $font-size-xl;
-  font-weight: 200;
+  font-weight: $font-weight-light;
+  color: $grey-dark;
 }
 
 h2 {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $blue;
+}
+
+h3 {
   font-size: $font-size-lg;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
+  color: $blue-light;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: $font-weight-light;
+  letter-spacing: 0.01rem;
 }
 
 // Links
@@ -60,25 +89,66 @@ a {
   display: inline-block;
   margin: 0;
   margin-bottom: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 999em;
   cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.1s ease-in;
   &:link, &:visited {
     color: $white;
-    background: $blue;
+    background: $blue-light;
   }
   &:hover, &:active, &:focus {
     color: $white;
-    background: darken($blue, 15%);
+    background: $blue;
   }
 }
 
-// Containers
+// Lists
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Seperators
+
+hr {
+  width: 20%;
+  height: 4px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 2px;
+  background: $grey-light;
+  margin-bottom: $space-y;
+}
+
+// Containers and Grids
 
 .container {
+  position: relative;
   max-width: 720px;
-  margin: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-left: $gutter;
   padding-right: $gutter;
+  box-sizing: border-box;
 }
+
+.row {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  padding-bottom: $space-y;
+}
+
+
