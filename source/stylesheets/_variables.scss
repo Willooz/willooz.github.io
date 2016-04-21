@@ -35,7 +35,7 @@ $letter-spacing:      0.01rem;
 
 // Whitespace variables
 
-$space-y:             3.75rem;
+$space-y:             3rem;
 $space-x:             1.5rem;
 $nav-height:          60px;
 $footer-height:       330px;
@@ -44,9 +44,10 @@ $footer-height:       330px;
 
 $white:               #FFF;
 $pink:                #FF566B;
-$blue-light:          #7DA9F9;
-$blue:                #5484DB;
-$blue-dark:           #1F2532;
+$blue-light:          #B0CCFF;
+$blue:                #7DA9F9;
+
+$blue-dark:           #3479F6;
 $green-light:         #AAEFC7;
 $green:               #2ecc71;
 $green-dark:          #25a25a;
@@ -65,9 +66,10 @@ $rss:                 #f26522;
 
 $grey-light-light:    #F9F9F9;
 $grey-light:          #F3F3F3;
-$grey:                #7F97A3;
+// $grey:                #7F97A3;
+$grey:                #808080;
 $grey-dark:           #464646;
-$grey-dark-dark:      #01090D;
+// $grey-dark-dark:      #01090D;
 
 // Grid
 

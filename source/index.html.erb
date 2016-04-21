@@ -1,45 +1,28 @@
 ---
-title: Chat with Coach Johnny
+title: Willem's projects
 ---
 
-<section id="welcome">
-  <div class="logo">
-    <%= image_tag "coach-johnny.png" %>
-  </div>
-  <h1>I'M COACH JOHNNY</h1>
-  <% link_to "https://middlemanapp.com", target: "_blank", class: "btn" do %>
-    <span>CHAT WITH ME </span><i class="fa fa-comments" aria-hidden="true"></i>
-  <% end %>
-</section>
-
-<section id="introduction" class="container">
-  <h3>Hi.</h3>
-  <p>I'm a virtual coach specialized in solving business problems. From daily management issues to severe business crises, there's nothing we can't fix together!</p>
-</section>
-
-<hr>
-
-<section id="capability" class="container">
-  <h2>WHAT WE CAN DO</h2>
-  <div class="block">
-    <h3>Frame your problem</h3>
-    <p>A problem well put is half solved! We'll test your assumptions and make sure you're on the right track from the get go!</p>
-  </div>
-
-  <div class="block">
-    <h3>Uncover root causes</h3>
-    <p>Guesses don't fix anything. We'll use techniques like 5 Why, Triz or even Shainin to get to the bottom of things.</p>
-  </div>
-
-  <div class="block">
-    <h3>Ensure resolution</h3>
-    <p>A good analysis is worthless without actual change. We'll track your implementation of solutions and make sure this is a total success!</p>
+<section id="introduction">
+  <div class="container">
+    <h2>Hi.</h2>
+    <p>Here are ideas and products I am experimenting with or working on. Get in touch if you'd like to collaborate or chat with me!</p>
   </div>
 </section>
 
-<hr>
+<section id="projects" class="container">
+  <!-- <p>Filter: experiements | projects. </p> -->
+  <br>
+
+  <ul class="project-list">
+    <% data.projects.projects.each do |p| %>
+      <li class="project-list-item">
+        <%= partial(:project, locals: { project: p }) %>
+      </li>
+    <% end %>
+  </ul>
+
+</section>
 
 <section id="call" class="container">
-  <h2>TRY ME NOW</h2>
-  <%= link_to "CHAT AT 999-888-777", "https://middlemanapp.com", target: "_blank", class: "btn" %>
+  <h2>Get in touch!</h2>
 </section>

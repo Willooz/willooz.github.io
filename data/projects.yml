@@ -1,0 +1,50 @@
+projects:
+  - Frutti:
+    name: Frutti
+    state: alpha
+    description: A Slack Bot that loves fruit! Frutti tracks our team's fruit diet.
+    links:
+      - https://github.com/Willooz/frutti
+    learnings:
+      - Slack Bots
+      - BotKit.js
+      - Firebase.io
+  - Coach Johnny:
+    name: Coach Johnny
+    state: alpha
+    description: Johnny is a virtual messaging coach that helps solve business problems.
+    links:
+      - http://www.johnny.chat
+    learnings:
+  - SimpleEVM:
+    name: Simple EVM
+    description: A one-page Earned Value report directly from your project data in a .CSV.
+    links:
+    learnings:
+      - D3.js
+      - AJAX files
+  - Coffeeshot:
+    name: Coffeeshot
+    state: beta
+    description: Project Management and Technology
+    links:
+      - https://www.coffeeshot.live
+    learnings:
+      - Ruby on Rails
+      - Devise
+      - Pundit
+      - Stripe
+  - WinAgain:
+    name: '#WinAgain'
+    description:
+    links:
+  - Simple OKR:
+    name: Simple OKR
+    state: live
+    description:
+    links:
+      - http://simpleokr.net
+  - Moonshot:
+    name: Moonshot
+    links:
+      - https://moonshot.herokuapp.com

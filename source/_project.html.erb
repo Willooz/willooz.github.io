@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-13">
+    <%= image_tag "#{project.name}.png", class: "project-picture" %>
+  </div>
+
+  <div class="col-23">
+    <h2><%= project.name %></h2>
+    <!-- <label><%= project.state %></label> -->
+
+    <p><%= project.description%></p>
+
+    <ul class="link-list">
+      <% unless project.links.nil? %>
+        <% project.links.each do |link| %>
+          <li><%= link_to link, link, relative: false, target: "blank" %></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+    <ul class="skill-list">
+      <% unless project.learnings.nil? %>
+        <% project.learnings.each do |learning| %>
+          <li><%= learning %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

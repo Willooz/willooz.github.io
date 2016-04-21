@@ -2,26 +2,20 @@
   width: 300px;
 }
 
-#welcome {
-  padding-top: $space-y;
-  padding-bottom: $space-y;
-  text-align: center;
-  background: $grey-light-light;
-}
+// #title {
+//   padding-top: $space-y;
+//   padding-bottom: $space-y;
+//   // background: $grey-light-light;
+// }
 
 #introduction {
   padding-top: $space-y;
-  text-align: center;
+  color: $white;
+  background: $blue;
+  h2 { color: $white; }
 }
 
-#capability {
-  h2 { text-align: center; }
+#projects {
 }
 
-#call {
-  text-align: center;
-}
-
-.block {
-  margin-bottom: $space-y;
-}
+ul.projects {}

@@ -1,15 +1,1 @@
-header {
-  background: $grey-light-light;
-  text-align: right;
-  ul {
-    list-style-type: none;
-    line-height: $space-y;
-    margin-right: $space-x;
-    li {
-      display: inline-block;
-      &:not(:first-child) {
-        margin-left: $space-x;
-      }
-    }
-  }
-}
+

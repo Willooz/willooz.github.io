@@ -17,20 +17,16 @@ dl, dd, ol, ul, img, figure {
   padding: 0;
 }
 
-h2 {
-  margin-bottom: $space-y;
-}
-
-h1, h2, blockquote, pre, ul, img, figure {
+blockquote, pre, ul, p, img, figure {
   margin-bottom: $space-y / 2;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   margin-bottom: $space-y / 3;
 }
 
 li {
-  margin-bottom: $space-y / 4;
+  margin-bottom: $space-y / 6;
 }
 
 // Body
@@ -49,21 +45,15 @@ h1, h2, h3, .btn {
 }
 
 h1 {
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
   font-weight: $font-weight-light;
-  color: $grey-dark;
+  // color: $grey-dark;
 }
 
 h2 {
-  font-size: $font-size-xl;
-  font-weight: $font-weight-bold;
-  color: $blue;
-}
-
-h3 {
   font-size: $font-size-lg;
   font-weight: $font-weight-regular;
-  color: $blue-light;
+  // color: $grey-dark;
 }
 
 p {
@@ -75,11 +65,11 @@ p {
 // Links
 
 a {
-  color: $blue;
+  color: $grey;
   text-decoration: none;
   &:link, &:visited {}
   &:hover, &:active, &:focus {
-    color: darken($blue, 15%);
+    color: $grey-dark;
   }
 }
 
@@ -127,6 +117,11 @@ hr {
 
 // Containers and Grids
 
+header, section {
+  padding-top: $space-y;
+  padding-bottom: $space-y;
+}
+
 .container {
   position: relative;
   max-width: 720px;
@@ -147,8 +142,20 @@ hr {
   clear: both;
 }
 
-section {
-  padding-bottom: $space-y;
+.col-13, .col-12, .col-23, .col-11 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  float: left;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-
+@include media-query($tablet) {
+  .col-13, .col-12, .col-23, .col-11 { text-align: left; }
+  .col-13 { width: 180px; }
+  .col-12 { width: 50%; }
+  .col-23 { width: 66.66666%; }
+}
