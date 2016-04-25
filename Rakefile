@@ -8,8 +8,8 @@ require 'middleman-gh-pages'
 # ENV["COMMIT_MESSAGE_SUFFIX"] = "[skip ci]"
 
 # Change the remote that you deploy to (default: origin)
-# ENV["REMOTE_NAME"] = 'origin'
+ENV["REMOTE_NAME"] = 'origin'
 
 # Use the branch master instead of gh-pages (default: gh-pages)
 # (if you're publishing a personal or organization page)
-# ENV["BRANCH_NAME"] = 'master'
+ENV["BRANCH_NAME"] = 'master'
