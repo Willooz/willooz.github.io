@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row">
 
-      <div class="footer-col footer-col-1">
+      <div class="col-12">
+        <h3>Let's meet</h3>
         <ul class="footer-list">
           <li>Willem Browne</li>
           <li>156 5th Avenue</li>
@@ -10,11 +11,27 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="col-12">
+        <h3>Let's talk</h3>
         <ul class="footer-list">
-          <li>willooz.github.io</li>
-          <li>GH willooz</li>
-          <li>TW willooz</li>
+          <li>
+            <% link_to 'https://github.com/Willooz', class: 'footer-link' do %>
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>/willooz</span>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://twitter.com/Willooz', class: 'footer-link' do %>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <span>@willooz</span>
+            <% end %>
+          </li>
+          <li>
+            <% link_to 'https://medium.com/@Willooz', class: 'footer-link' do %>
+              <i class="fa fa-medium" aria-hidden="true"></i>
+              <span>@willooz</span>
+            <% end %>
+          </li>
         </ul>
       </div>
 

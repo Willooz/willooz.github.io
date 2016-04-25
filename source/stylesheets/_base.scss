@@ -47,13 +47,16 @@ h1, h2, h3, .btn {
 h1 {
   font-size: $font-size-lg;
   font-weight: $font-weight-light;
-  // color: $grey-dark;
 }
 
 h2 {
   font-size: $font-size-lg;
   font-weight: $font-weight-regular;
-  // color: $grey-dark;
+}
+
+h3 {
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
 }
 
 p {
@@ -153,9 +156,13 @@ header, section {
   text-align: center;
 }
 
+@include media-query($phone) {
+  // .col-12 { text-align: left; }
+  .col-12 { width: 50%; }
+}
+
 @include media-query($tablet) {
   .col-13, .col-12, .col-23, .col-11 { text-align: left; }
   .col-13 { width: 180px; }
-  .col-12 { width: 50%; }
   .col-23 { width: 66.66666%; }
 }

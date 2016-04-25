@@ -1,26 +1,18 @@
 footer {
   padding: $space-y 0;
   font-weight: 300;
-  color: #ADADAD;
-  background: $grey-light-light;
+  color: $grey-light;
+  background: $grey-white-light;
 }
 
 .footer {
   // &-list {
-
-  li:first-child {
-    font-weight: 400;
-    // }
-    // li:not(:last-child) {
-    //   margin-bottom: $space-y / 2;
-    // }
+  &-link {
+    color: $grey-light;
+    i { min-width: 1.5rem }
   }
 }
 
-// &-link {
-//   color: $grey-mid-light;
-//   i { min-width: 1.5rem }
-// }
 
 // &-link:hover {
 //   color: $grey-mid;

@@ -1,10 +1,8 @@
 projects:
   - Frutti:
     name: Frutti
-    state: alpha
+    state: beta
     description: A Slack Bot that loves fruit! Frutti tracks our team's fruit diet.
-    links:
-      - https://github.com/Willooz/frutti
     learnings:
       - Slack Bots
       - BotKit.js
@@ -26,25 +24,38 @@ projects:
   - Coffeeshot:
     name: Coffeeshot
     state: beta
-    description: Project Management and Technology
+    description: Learn how to use today's technology to be a better project manager.
     links:
-      - https://www.coffeeshot.live
     learnings:
-      - Ruby on Rails
-      - Devise
-      - Pundit
+      - Trix Editor
       - Stripe
+      - SSL
   - WinAgain:
-    name: '#WinAgain'
-    description:
+    name: '#WinSoMuch'
+    state: alpha
+    description: 'A place where teams celebrate success and talent. #MakeYourTeamGreatAgain!'
     links:
+      - https://github.com/Willooz/talent
   - Simple OKR:
     name: Simple OKR
     state: live
-    description:
+    description: Set, review and share quarterly objectives using the Objective-Key Results method.
     links:
       - http://simpleokr.net
+      - https://github.com/Willooz/simpleokr
+    learnings:
+      - Heroku
+      - Postmark
+      - Mixpanel
   - Moonshot:
     name: Moonshot
+    state: live
+    description: A self-management platform for ambitious teams (goals and rewards).
     links:
-      - https://moonshot.herokuapp.com
+      - https://gomoonshot.herokuapp.com
+      - https://github.com/Willooz/moonshot
+    learnings:
+      - Git
+      - Ruby
+      - Ruby on Rails
+      - PostgreSQL

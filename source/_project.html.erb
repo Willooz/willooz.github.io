@@ -1,6 +1,10 @@
 <div class="row">
   <div class="col-13">
-    <%= image_tag "#{project.name}.png", class: "project-picture" %>
+    <% if project.name == '#WinSoMuch' %>
+      <%= image_tag "WinSoMuch.gif", class: "project-picture" %>
+    <% else %>
+      <%= image_tag "#{project.name}.png", class: "project-picture" %>
+    <% end %>
   </div>
 
   <div class="col-23">
@@ -12,7 +16,16 @@
     <ul class="link-list">
       <% unless project.links.nil? %>
         <% project.links.each do |link| %>
-          <li><%= link_to link, link, relative: false, target: "blank" %></li>
+          <li>
+            <% link_to link, relative: false, target: "blank" do %>
+              <% if link.include?("github") %>
+                <i class="fa fa-github" aria-hidden="true"></i>
+              <% else %>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              <% end %>
+              <%= link.gsub(/^(https:\/\/github.com\/|(https|http):\/\/)/, '') %>
+            <% end %>
+          </li>
         <% end %>
       <% end %>
     </ul>
