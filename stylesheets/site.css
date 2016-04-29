@@ -380,7 +380,7 @@ a {
   transition: all 0.1s ease-in; }
   .btn:link, .btn:visited {
     color: #FFF;
-    background: #B0CCFF; }
+    background: #CADDFF; }
   .btn:hover, .btn:active, .btn:focus {
     color: #FFF;
     background: #7DA9F9; }
@@ -507,5 +507,5 @@ footer {
     font-family: "Helvetica";
     font-size: 0.75rem;
     color: #3479F6;
-    background: #B0CCFF;
+    background: #CADDFF;
     border-radius: 999em; }
